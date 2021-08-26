@@ -1,5 +1,5 @@
 {% set name = "molecule-docker" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/molecule-docker-{{ version }}.tar.gz
-  sha256: 5ca49d2921c5a7191e227249ad5a6a9d66c38b5e07ae6ef1d5c721f5436a582a
+  sha256: a16f3bb734eb1d5ec28fa3bb678854bda7cb142968467fc8f4f31a518cd4555f
 
 build:
   number: 0
