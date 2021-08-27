@@ -26,6 +26,7 @@ requirements:
     - molecule >=3.0.2
     - python
     - python-selinux  # [linux]
+    - ansible-compat
 
 test:
   imports:
