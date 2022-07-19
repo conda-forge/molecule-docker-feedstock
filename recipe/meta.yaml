@@ -1,5 +1,5 @@
 {% set name = "molecule-docker" %}
-{% set version = "1.1.0" %}
+{% set version = "2.0.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/molecule-docker-{{ version }}.tar.gz
-  sha256: e15133395f10dbf60f75125aae7145f47747fc7158f2317698885013796252bf
+  sha256: 12c180c95c3f022d89aedd52e42b57e5c1e0ee4d4be8ec997c3dcb9c28d7e2a3
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py < 38 or win]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,14 +19,11 @@ requirements:
   host:
     - pip
     - python
-    - setuptools_scm >=1.15.0
-    - setuptools_scm_git_archive >=1.0
   run:
     - docker-py >=4.3.1
-    - molecule >=3.4.0
+    - molecule >=4.0.0
     - python
     - python-selinux  # [linux]
-    - ansible-compat >=0.5.0
     - requests
 
 test:
