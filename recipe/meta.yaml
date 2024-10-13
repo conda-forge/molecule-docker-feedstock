@@ -18,6 +18,7 @@ build:
 requirements:
   host:
     - pip
+    - setuptools
     - python
   run:
     - docker-py >=4.3.1
